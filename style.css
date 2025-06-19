@@ -373,6 +373,43 @@ footer {
       }
     }
   }
+
+ .sec1-ctn{
+  display: block;
+  margin: 100px 50px 0px 50px;
+  .sec1-image{
+   display: block;
+   margin-left: 150px;
+  }
+  .sec1-txt{
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+    .sec1-txt-header{
+      text-align: center;
+    }
+    .sec1-min-txt{
+      font-size: larger;
+    }
+  }
+ }
+
+ .mission{
+  padding-left: 50px;
+  padding-right: 50px;
+ }
+
+ .view{
+  margin: 100px 0px 0px 0px;
+  .listing{
+    .list-ctn{
+      display: block;
+      .list-txt{
+       padding-bottom: 20px;
+      }
+    }
+  }
+ }
+
 }
 
 @media (max-width: 768px) {
@@ -412,6 +449,10 @@ footer {
   .form{
     padding-left: 30px;
     padding-right: 30px;
+   }
+
+   .sec1-image{
+    margin-left: 50px !important;
    }
 
   }
@@ -486,5 +527,35 @@ footer {
 }
   .submit-btn{
     width: 100%;
+  }
+
+  .sec1-ctn{
+    .sec1-image{
+      margin-left: 0px !important;
+      img{
+        width: 300px;
+      }
+    }
+    .sec1-txt{
+      .sec1-txt-header{
+        font-size: x-large;
+      }
+    }
+  }
+
+  .mission{
+    display: block;
+    
+    .mission-ctn{
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+
+  .view{
+    .listing{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

@@ -394,14 +394,35 @@ footer {
       margin-left: 0px;
     }
   }
-}
+
+  .banner{
+    height: 50vh;
+    .banner-content{
+      .text{
+        margin-left: 25px;
+        p{
+          font-size: 25px;
+        }
+        .btn{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .form{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+  }
 
 @media (max-width: 440px) {
   .topbar {
     display: block;
     margin-bottom: 30px;
     .logo {
-      margin-left: 5px;
+      margin-top: 10px;
+      margin-left: 30px;
     }
     .contents {
       margin-left: 5px;
@@ -411,12 +432,14 @@ footer {
       }
     }
   }
+
   a {
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   .menu{
     display: block;
+    padding-left: 20px;
     color: white;
     i{
       font-size: 24px;
@@ -438,5 +461,30 @@ footer {
   display: none;
 }
 
+  }
+
+.banner{
+  .desktop{
+    display: none;
+  }
+  .banner-content{
+    .text{
+      padding-top: 70px;
+      width: 100%;
+    }
+  }
+}
+
+.mobile{
+  display: block;
+  background-color: rgb(190, 187, 187);
+    margin-top: 50px;
+
+    .submit-btn{
+      padding: 10px 20px;
+    }
+}
+  .submit-btn{
+    width: 100%;
   }
 }

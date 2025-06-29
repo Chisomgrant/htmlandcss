@@ -11,7 +11,7 @@ a {
   margin-bottom: 10px;
   .icons {
     span {
-      margin-right: 20px;
+      /* margin-right: 20px; */
       i {
         color: red;
         border: 1px solid grey;
@@ -61,7 +61,7 @@ nav{
     }
   }
   .icons{
-    padding-right: 5%;
+    padding-right: 10%;
     span{
       i{
         color: white;
@@ -99,11 +99,15 @@ nav{
     color: white;
     border-radius: 35px;
   }
+  /* .map{
+    background-image: url(image/map-back.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 30%;
+  } */
 }
 .mid-sec{
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
   background-color: rgb(221, 219, 219);
   .mid{
     display: flex;
@@ -112,12 +116,57 @@ nav{
     padding: 20px;
     .icon{
       font-size: 25px;
-      background-color: rgb(121, 121, 121);
+      background-color: rgb(165, 164, 164);
       border-radius: 70%;
       padding: 20px;
     }
   }
+  .br{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
 }
+
+footer{
+  margin-top: 50px;
+  .footer-ctn{
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    .logo-area{
+      p{
+        color: white;
+      }
+    }
+    .list1{
+      ul{
+        list-style: none;
+        li{
+          padding-top: 20px;
+          a{
+            color: white;
+            i{
+              color: red;
+            }
+          }
+        }
+      }
+    }
+    .ft-info{
+      padding-top: 20px;
+    }
+    .bold{
+      font-size: larger;
+      color: red;
+    }
+  }
+  .copyright{
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+
 
 /* media query */
 @media (max-width: 1024px) {
@@ -145,10 +194,10 @@ nav{
   .contact{
     form{
       input{
-        padding: 15px 120px 15px 15px;
+        padding: 15px 80px 15px 15px;
       }
       textarea{
-        padding: 20px 140px 20px 20px;
+        padding: 20px 100px 20px 20px;
       }
     }
   }
@@ -157,7 +206,6 @@ nav{
 @media (max-width: 576px) {
   .topbar{
     display: block;
-    margin-left: 10px;
     .logo{
       padding-bottom: 20px;
     }
@@ -185,12 +233,15 @@ nav{
       margin-bottom: 50px;
     }
   }
+   .br{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
 }
 
 @media (max-width: 440px) {
   .topbar{
     display: block;
-    margin-left: 10px;
     .logo{
       padding-bottom: 20px;
     }
@@ -205,16 +256,23 @@ nav{
       margin-left: 0;
     }
   }
-  /* .banner{
+  .banner{
+    margin: 0;
+    height: 40vh;
     .in{
       margin-left: 30px;
       position: relative;
-      top: 65px;
+      top: 150px;
     }
-  } */
+  }
   .contact{
     .fm{
       margin-bottom: 50px;
     }
+  }
+
+  .br{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
   }
 }
